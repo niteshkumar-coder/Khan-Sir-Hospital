@@ -24,7 +24,10 @@ import ContactSection from './sections/Contact';
 import PrivacyPolicy from './sections/PrivacyPolicy';
 import SymptomChecker from './components/SymptomChecker';
 
-gsap.registerPlugin(ScrollTrigger);
+// Ensure plugin is registered safely
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 type ViewState = 'home' | 'privacy' | 'appointment' | 'doctors' | 'services' | 'contact';
 
@@ -35,7 +38,7 @@ const App: React.FC = () => {
     // Global scroll orchestration
     const timeout = setTimeout(() => {
       ScrollTrigger.refresh();
-    }, 1000);
+    }, 100); // Faster refresh for better responsiveness
 
     return () => {
       clearTimeout(timeout);
@@ -45,7 +48,7 @@ const App: React.FC = () => {
 
   const handleBackToHome = () => {
     setActiveView('home');
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   const renderActiveView = () => {
@@ -58,13 +61,17 @@ const App: React.FC = () => {
       />
     );
 
+    const footerWithPrivacy = (
+      <ContactSection onPrivacyClick={() => setActiveView('privacy')} />
+    );
+
     switch (activeView) {
       case 'privacy':
         return (
           <div className="relative overflow-x-hidden">
             {commonNav}
             <PrivacyPolicy onBack={handleBackToHome} />
-            <ContactSection onPrivacyClick={() => setActiveView('privacy')} />
+            {footerWithPrivacy}
           </div>
         );
       case 'appointment':
@@ -72,7 +79,7 @@ const App: React.FC = () => {
           <div className="relative overflow-x-hidden">
             {commonNav}
             <AppointmentPage onBack={handleBackToHome} />
-            <ContactSection onPrivacyClick={() => setActiveView('privacy')} />
+            {footerWithPrivacy}
           </div>
         );
       case 'doctors':
@@ -80,7 +87,7 @@ const App: React.FC = () => {
           <div className="relative overflow-x-hidden">
             {commonNav}
             <DoctorsPage onBack={handleBackToHome} onBookClick={() => setActiveView('appointment')} />
-            <ContactSection onPrivacyClick={() => setActiveView('privacy')} />
+            {footerWithPrivacy}
           </div>
         );
       case 'services':
@@ -88,7 +95,7 @@ const App: React.FC = () => {
           <div className="relative overflow-x-hidden">
             {commonNav}
             <ServicesPage onBack={handleBackToHome} onBookClick={() => setActiveView('appointment')} />
-            <ContactSection onPrivacyClick={() => setActiveView('privacy')} />
+            {footerWithPrivacy}
           </div>
         );
       case 'contact':
@@ -96,7 +103,7 @@ const App: React.FC = () => {
           <div className="relative overflow-x-hidden">
             {commonNav}
             <ContactPage onBack={handleBackToHome} onBookClick={() => setActiveView('appointment')} />
-            <ContactSection onPrivacyClick={() => setActiveView('privacy')} />
+            {footerWithPrivacy}
           </div>
         );
       default:
@@ -110,14 +117,17 @@ const App: React.FC = () => {
               <BloodBankSection />
               <EmergencySection />
               <NewsSection />
-              <DoctorsSection onBookClick={() => setActiveView('appointment')} onSeeAllClick={() => setActiveView('doctors')} />
+              <DoctorsSection 
+                onBookClick={() => setActiveView('appointment')} 
+                onSeeAllClick={() => setActiveView('doctors')} 
+              />
               <OpdInfo />
               <AppointmentSection onBookClick={() => setActiveView('appointment')} />
               <Careers />
               <ResourcesSection />
               <LocationSection />
               <CommunitySection />
-              <ContactSection onPrivacyClick={() => setActiveView('privacy')} />
+              {footerWithPrivacy}
             </main>
             <SymptomChecker />
           </div>
@@ -125,7 +135,11 @@ const App: React.FC = () => {
     }
   };
 
-  return renderActiveView();
+  return (
+    <div className="min-h-screen">
+      {renderActiveView()}
+    </div>
+  );
 };
 
 export default App;
