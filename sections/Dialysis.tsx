@@ -4,11 +4,9 @@ import { gsap } from 'gsap';
 import { CheckCircle2 } from 'lucide-react';
 
 const DialysisSection: React.FC = () => {
-  // Explicitly typing the ref for TypeScript compliance
   const imgRef = useRef<HTMLImageElement>(null);
 
   useLayoutEffect(() => {
-    // Safety check for current ref value
     if (!imgRef.current) return;
     
     gsap.from(imgRef.current, {
@@ -54,7 +52,7 @@ const DialysisSection: React.FC = () => {
           <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl bg-gray-200">
             <img
               ref={imgRef}
-              src="https://i.ibb.co/0yrdtfSF/image.jpg"
+              src="https://t3.ftcdn.net/jpg/07/89/17/80/360_F_789178056_ezdwJdwLP45yV5mRlRBcQ7XP5eACGiob.jpg"
               alt="Dialysis Center"
               className="w-full h-full object-cover"
             />

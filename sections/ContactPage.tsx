@@ -26,7 +26,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack, onBookClick }) => {
           <div className="relative">
             <div className="h-[500px] rounded-[40px] overflow-hidden shadow-2xl relative group">
               <img 
-                src="https://i.ibb.co/hJxk6vzk/image.jpg" 
+                src="https://i.ibb.co/PvjMmm8T/image.jpg" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                 alt="Patient Consultation"
               />

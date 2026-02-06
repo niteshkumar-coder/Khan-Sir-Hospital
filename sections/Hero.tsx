@@ -41,8 +41,8 @@ const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
     <section ref={root} className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 scale-110">
         <img
-          src="https://i.ibb.co/chX05LBB/image.jpg"
-          alt="Khan Sir Hospital Diagnostics Facility"
+          src="https://sumandeepvidyapeethdu.edu.in/storage/pages/slider/6705fd5fa9cbf_1728445791.jpg"
+          alt="Khan Sir Hospital Facility"
           className="w-full h-full object-cover brightness-[0.35]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E3C]/90 via-[#0B1E3C]/50 to-transparent" />

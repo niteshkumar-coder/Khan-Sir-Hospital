@@ -4,22 +4,22 @@ import { Calendar, ChevronRight } from 'lucide-react';
 
 const news = [
   {
-    tag: 'Camp',
-    title: 'Free Health Camp in Patna City',
-    date: 'Aug 10, 2025',
-    img: 'https://i.ibb.co/Pvd5CF44/image.jpg'
-  },
-  {
     tag: 'Service',
-    title: 'New Pediatric ICU Wing Opened',
-    date: 'Aug 05, 2025',
-    img: 'https://i.ibb.co/VYkFX1n0/image.jpg'
+    title: 'Educator Khan Sir opens low-cost hospital in Patna',
+    date: 'Aug 10, 2025',
+    img: 'https://medicalbuyer.co.in/wp-content/uploads/2026/01/Educator-Khan-Sir-opens-low-cost-hospital-in-Patna.jpg'
   },
   {
-    tag: 'Notice',
-    title: 'Updated Visitor Hours Policy',
+    tag: 'Care',
+    title: 'Advanced Neonatal ICU Wing Updates',
+    date: 'Aug 05, 2025',
+    img: 'https://ik.imagekit.io/d7t01fhx2/Ovum_Hospitals/specialities/nicu-new/Top-Tier-Neonatal-Intensive-Care-Unit-Hospital-In-Bangalore.jpg?updatedAt=1706091173962'
+  },
+  {
+    tag: 'Facility',
+    title: 'New High-Tech Diagnostic Center',
     date: 'Jul 28, 2025',
-    img: 'https://i.ibb.co/v697z7KK/image.jpg'
+    img: 'https://www.northumbria.nhs.uk/application/files/thumbnails/xs/2316/5183/0820/New-CT-scanner-at-NTGH-1-1920x1440.jpg'
   }
 ];
 

@@ -107,9 +107,9 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ onBack, onBookClick }) => {
 
           <div className="flex-shrink-0 w-full lg:w-1/3 aspect-square bg-white/5 rounded-3xl overflow-hidden border border-white/10 group">
             <img 
-              src="https://i.ibb.co/27Shzcqb/image.jpg" 
+              src="https://i.ibb.co/0yrdtfSF/image.jpg" 
               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
-              alt="Hospital Facility"
+              alt="Dialysis Equipment"
             />
           </div>
         </div>

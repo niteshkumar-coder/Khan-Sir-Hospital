@@ -13,9 +13,9 @@ const AppointmentSection: React.FC<AppointmentSectionProps> = ({ onBookClick }) 
         <div className="relative">
           <div className="h-[500px] rounded-[40px] overflow-hidden shadow-2xl relative group">
             <img 
-              src="https://i.ibb.co/hJxk6vzk/image.jpg" 
+              src="https://sgtuniversity.ac.in/assets/images/faculty/nursing/about/parent3.webp" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-              alt="Patient Consultation"
+              alt="Consultation Care"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E3C]/60 to-transparent" />
             <div className="absolute bottom-10 left-10 right-10">

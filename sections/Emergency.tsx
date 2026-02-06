@@ -15,11 +15,11 @@ const EmergencySection: React.FC = () => {
         <div className="order-2 lg:order-1">
           <div className="grid gap-6">
             <div className="aspect-video bg-white/5 rounded-[40px] overflow-hidden border border-white/10">
-              <img src="https://i.ibb.co/VYkFX1n0/image.jpg" className="w-full h-full object-cover opacity-80" alt="Surgery Theater" />
+              <img src="https://www.stcatherine.com/storage/o%20nama/Operacijska%20sala_%20Specijalna%20bolnica%20Sv.%20Katarina.jpg" className="w-full h-full object-cover opacity-80" alt="Operation Theater" />
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="aspect-square bg-white/5 rounded-[40px] overflow-hidden border border-white/10">
-                <img src="https://i.ibb.co/PvjMmm8T/image.jpg" className="w-full h-full object-cover opacity-80" alt="Intensive Care" />
+                <img src="https://generalhospitalernakulam.in/wp-content/uploads/2023/09/TRAUMA2.jpeg" className="w-full h-full object-cover opacity-80" alt="Trauma Care Unit" />
               </div>
               <div className="bg-[#1E9C9D] rounded-[40px] p-8 flex flex-col justify-center">
                 <h4 className="text-4xl font-bold mb-2">12s</h4>

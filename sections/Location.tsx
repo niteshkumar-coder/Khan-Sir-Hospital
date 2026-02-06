@@ -46,7 +46,7 @@ const LocationSection: React.FC = () => {
           <div className="lg:col-span-3 relative z-10 h-full min-h-[400px]">
             <div className="w-full h-full bg-white/5 rounded-[40px] border border-white/10 overflow-hidden group">
               <img 
-                src="https://i.ibb.co/KzKR2kjz/image.jpg" 
+                src="https://www.breachcandyhospital.org/sites/default/files/2022-10/hospital.png" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale group-hover:grayscale-0"
                 alt="Hospital Exterior"
               />

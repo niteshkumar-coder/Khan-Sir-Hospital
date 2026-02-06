@@ -13,27 +13,27 @@ const previewDoctors = [
     role: "Founder & Chief Consultant",
     specialization: "General Surgery",
     exp: "20+ Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
+    img: "https://cdn-ilehhjm.nitrocdn.com/eIBNMMWibnbhLwqgjETUbvbkJYuqkpxK/assets/images/optimized/rev-fede60a/bangalorehospitals.in/wp-content/uploads/2025/06/image-58.webp",
     bio: "Visionary leader dedicated to accessible healthcare and surgical excellence in Bihar.",
     affiliations: ["Expert in Laparoscopic Procedures", "Pioneer in Local Health Initiatives"]
   },
   {
     name: "Dr. Rakesh Kumar",
-    role: "Cardiologist",
-    specialization: "Heart Care",
+    role: "Senior Consultant",
+    specialization: "Internal Medicine",
     exp: "12 Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
-    bio: "Specialist in non-invasive cardiology and advanced cardiac diagnostics.",
-    affiliations: ["Member of Cardiac Society of India", "Lead in Cardiac Emergency Protocols"]
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2RKMmWlr5VLDnkE3CGiVFH_usYQjEdYz2w&s",
+    bio: "Specialist in chronic disease management and advanced internal diagnostics.",
+    affiliations: ["Member of Physician Society of India", "Lead in Internal Emergency Protocols"]
   },
   {
     name: "Dr. Priya Singh",
-    role: "Gynecologist/Pediatrician",
-    specialization: "Mother & Child Care",
+    role: "Chief Pediatrician",
+    specialization: "Pediatrics",
     exp: "10 Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
-    bio: "Compassionate care for both mothers and children with a focus on preventive wellness.",
-    affiliations: ["Child Nutrition Specialist", "Painless Delivery Expert"]
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlsSlKdPWflzhK7lyK0M6CcbjLgxDOEjKNTQ&s",
+    bio: "Compassionate care for children with a focus on preventive wellness and nutrition.",
+    affiliations: ["Child Nutrition Specialist", "Pediatric Emergency Expert"]
   }
 ];
 

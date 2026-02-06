@@ -13,7 +13,7 @@ const doctors = [
     role: "Founder & Chief Consultant",
     specialization: "General Surgery",
     exp: "20+ Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
+    img: "https://i.ibb.co/KzKR2kjz/image.jpg",
     bio: "Visionary leader dedicated to accessible healthcare and surgical excellence in Bihar.",
     affiliations: ["Expert in Laparoscopic Procedures", "Pioneer in Local Health Initiatives"]
   },
@@ -22,7 +22,7 @@ const doctors = [
     role: "Cardiologist",
     specialization: "Heart Care",
     exp: "12 Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
+    img: "https://i.ibb.co/VYkFX1n0/image.jpg",
     bio: "Specialist in non-invasive cardiology and advanced cardiac diagnostics.",
     affiliations: ["Member of Cardiac Society of India", "Lead in Cardiac Emergency Protocols"]
   },
@@ -31,7 +31,7 @@ const doctors = [
     role: "Gynecologist/Pediatrician",
     specialization: "Mother & Child Care",
     exp: "10 Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
+    img: "https://i.ibb.co/PvjMmm8T/image.jpg",
     bio: "Compassionate care for both mothers and children with a focus on preventive wellness.",
     affiliations: ["Child Nutrition Specialist", "Painless Delivery Expert"]
   },
@@ -40,7 +40,7 @@ const doctors = [
     role: "Orthopedic Surgeon",
     specialization: "Joint & Bone Care",
     exp: "15 Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
+    img: "https://i.ibb.co/KzKR2kjz/image.jpg",
     bio: "Expert in trauma orthopedics and minimally invasive joint surgeries.",
     affiliations: ["Member of Orthopedic Association", "Sports Injury Specialist"]
   },
@@ -49,7 +49,7 @@ const doctors = [
     role: "Senior Gynecologist",
     specialization: "Women's Health",
     exp: "15+ Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
+    img: "https://i.ibb.co/VYkFX1n0/image.jpg",
     bio: "Dedicated to comprehensive women's health and complex obstetric care.",
     affiliations: ["Expert in High-Risk Pregnancy", "Women's Health Advocate"]
   },
@@ -58,7 +58,7 @@ const doctors = [
     role: "Senior Physician",
     specialization: "Diabetes & Hypertension",
     exp: "12 Years",
-    img: "https://i.ibb.co/B2WcK9Wj/image.jpg",
+    img: "https://i.ibb.co/KzKR2kjz/image.jpg",
     bio: "Focuses on chronic disease management and lifestyle-based recovery protocols.",
     affiliations: ["Diabetes Management Expert", "Internal Medicine Specialist"]
   }

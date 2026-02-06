@@ -35,12 +35,12 @@ const CommunitySection: React.FC = () => {
               <p className="text-[#6B7A8F] text-sm">Providing aid to those who cannot afford critical life-saving treatments.</p>
             </div>
             <div className="flex-1 aspect-[4/5] rounded-[40px] overflow-hidden">
-               <img src="https://i.ibb.co/Lz622dNS/image.jpg" className="w-full h-full object-cover" alt="Hospital Lounge" />
+               <img src="https://www.breachcandyhospital.org/sites/default/files/17-compressed.jpg" className="w-full h-full object-cover" alt="Patient Ward" />
             </div>
           </div>
           <div className="flex gap-4">
             <div className="flex-1 aspect-video rounded-[40px] overflow-hidden">
-               <img src="https://i.ibb.co/27Shzcqb/image.jpg" className="w-full h-full object-cover" alt="Facility Hall" />
+               <img src="https://medicalbuyer.co.in/wp-content/uploads/2023/05/Health-officials-to-inspect-Tamil-Nadu-govt-hospitals-from-Apr-10.jpg" className="w-full h-full object-cover" alt="Hospital Inspection" />
             </div>
             <div className="flex-1 bg-[#0B1E3C] p-8 rounded-[40px] text-white">
               <Users className="text-[#1E9C9D] mb-4" size={32} />

@@ -36,7 +36,7 @@ const BloodBankSection: React.FC = () => {
 
         <div className="grid grid-cols-2 gap-6">
           <div className="space-y-6 pt-12">
-            <img src="https://i.ibb.co/v697z7KK/image.jpg" className="w-full rounded-[40px] shadow-lg" alt="Blood Analysis" />
+            <img src="https://www.breachcandyhospital.org/sites/default/files/123123-compressed_0.jpg" className="w-full rounded-[40px] shadow-lg object-cover aspect-[4/5]" alt="Blood Analysis Lab" />
             <div className="bg-[#EAF6F6] p-8 rounded-[40px] border border-[#1E9C9D]/10">
               <h4 className="text-[#1E9C9D] font-bold text-3xl mb-1">2k+</h4>
               <p className="text-[#0B1E3C] text-sm font-semibold">Active Donors</p>
@@ -47,7 +47,7 @@ const BloodBankSection: React.FC = () => {
               <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-4">Availability</p>
               <h4 className="text-white font-bold text-xl leading-snug">Real-time inventory for rare groups.</h4>
             </div>
-            <img src="https://i.ibb.co/HDRztFtz/image.jpg" className="w-full rounded-[40px] shadow-lg" alt="Laboratory" />
+            <img src="https://www.breachcandyhospital.org/sites/default/files/17-compressed.jpg" className="w-full rounded-[40px] shadow-lg object-cover aspect-[4/5]" alt="Inpatient Ward" />
           </div>
         </div>
       </div>
