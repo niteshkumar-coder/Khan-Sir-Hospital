@@ -1,0 +1,7 @@
+{
+  "name": "Khan Sir Hospital - Compassionate Care",
+  "description": "A world-class healthcare facility offering advanced treatments in Nephrology, Emergency Care, and Diagnostics. Built with a focus on patient comfort and transparency.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
