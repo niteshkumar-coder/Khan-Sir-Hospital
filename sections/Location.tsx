@@ -38,9 +38,14 @@ const LocationSection: React.FC = () => {
               </div>
             </div>
 
-            <button className="btn-primary mt-12 px-10 py-4 rounded-xl flex items-center gap-3 font-bold group">
+            <a 
+              href="https://share.google/fBhSoyFUweOvCMSUJ" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary mt-12 px-10 py-4 rounded-xl inline-flex items-center gap-3 font-bold group shadow-lg shadow-[#1E9C9D]/20"
+            >
               <MapIcon size={20} /> Open in Google Maps
-            </button>
+            </a>
           </div>
 
           <div className="lg:col-span-3 relative z-10 h-full min-h-[400px]">
