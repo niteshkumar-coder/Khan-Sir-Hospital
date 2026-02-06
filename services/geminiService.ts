@@ -1,10 +1,19 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+/**
+ * Safely initializes the GoogleGenAI client.
+ * Prevents crashes in environments where 'process' might not be defined 
+ * or when the API_KEY is not immediately available.
+ */
+const getAIClient = () => {
+  const apiKey = typeof process !== 'undefined' ? process.env.API_KEY : '';
+  return new GoogleGenAI({ apiKey: apiKey || '' });
+};
 
 export const getHealthAdvice = async (symptoms: string) => {
   try {
+    const ai = getAIClient();
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: symptoms,
@@ -16,6 +25,6 @@ export const getHealthAdvice = async (symptoms: string) => {
     return response.text || "I'm sorry, I couldn't process that. Please contact our front desk.";
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "I am having trouble connecting right now. Please call our emergency number 112 if you have an urgent issue.";
+    return "I am having trouble connecting right now. Please call our emergency number +91 62002 88285 if you have an urgent issue.";
   }
 };

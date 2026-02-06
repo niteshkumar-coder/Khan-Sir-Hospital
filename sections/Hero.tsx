@@ -14,20 +14,24 @@ const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(titleRef.current, {
-        y: 60,
-        opacity: 0,
-        duration: 1.2,
-        ease: "power4.out"
-      });
+      if (titleRef.current) {
+        gsap.from(titleRef.current, {
+          y: 60,
+          opacity: 0,
+          duration: 1.2,
+          ease: "power4.out"
+        });
+      }
 
-      gsap.from(cardRef.current, {
-        x: 100,
-        opacity: 0,
-        duration: 1.5,
-        delay: 0.5,
-        ease: "power3.out"
-      });
+      if (cardRef.current) {
+        gsap.from(cardRef.current, {
+          x: 100,
+          opacity: 0,
+          duration: 1.5,
+          delay: 0.5,
+          ease: "power3.out"
+        });
+      }
     }, root);
 
     return () => ctx.revert();

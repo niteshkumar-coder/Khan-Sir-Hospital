@@ -4,9 +4,13 @@ import { gsap } from 'gsap';
 import { CheckCircle2 } from 'lucide-react';
 
 const DialysisSection: React.FC = () => {
-  const imgRef = useRef(null);
+  // Explicitly typing the ref for TypeScript compliance
+  const imgRef = useRef<HTMLImageElement>(null);
 
   useLayoutEffect(() => {
+    // Safety check for current ref value
+    if (!imgRef.current) return;
+    
     gsap.from(imgRef.current, {
       scrollTrigger: {
         trigger: imgRef.current,
